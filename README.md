@@ -1,10 +1,9 @@
-# Ghost Scraper Empire 🌑
-
+# Ghost Scraper Empire 
 > *Shadows don't bloat. They hunt.*
 
 A raw, async-first Reddit scraper designed for quant traders and data hoarders. Pulls top posts from multiple subreddits simultaneously, runs vectorized sentiment analysis (Bull/Bear/Neutral), checks for Web3 signals (stubbed), and buries the loot in a local SQLite vault.
 
-## ⚡ Features
+##  Features
 
 *   **Async Swarm**: Uses `aiohttp` + `asyncio` semaphores to hit multiple subs without blocking.
 *   **Ghost Mode**: Rotating User-Agents and randomized sleep intervals to dodge 429s.
@@ -13,13 +12,13 @@ A raw, async-first Reddit scraper designed for quant traders and data hoarders. 
 *   **The Vault**: SQLite storage with hashed IDs to prevent dupes. Indexed for instant SQL queries.
 *   **Zero Fluff**: Single-file architecture. No config files. CLI driven.
 
-## 🛠️ Arsenal
+## Arsenal
 
 *   Python 3.8+
 *   `aiohttp`
 *   `pandas`
 
-## 💀 Usage
+## Usage
 
 ### The Hunt
 Scrape subs, analyze sentiment, and save to DB/CSV.
@@ -44,7 +43,7 @@ python3 ghost_scraper_empire.py query "SELECT sub, title, sentiment_score FROM p
 ### The Easter Egg
 Set depth to `42`. The universe might whisper back.
 
-## 📂 Output
+## Output
 
 *   **shadow_vault.db**: The persistent SQLite database.
 *   **empire_feed.csv**: Appended raw feed for your backtesting rigs.
